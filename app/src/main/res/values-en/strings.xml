@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="city">Kaliningrad</string>
+    <string name="date">7th july</string>
+    <string name="day_night">16 c at day| 12 c at night</string>
+    <string name="cur_temp">16 c</string>
+    <string name="feel_temp">feels like 18 с</string>
+    <string name="weather_type">Cloudy</string>
+    <string name="tomorrow">tomorrow</string>
+    <string name="third_day">9th july</string>
+    <string name="fourth_day">10th july</string>
+    <string name="fifth_day">11th july</string>
+    <string name="sixth_day">12th july</string>
+    <string name="tomorrow_weath_type">Cloudy</string>
+    <string name="third_day_weath_type">Sunny</string>
+    <string name="fourth_day_weath_type">Sunny</string>
+    <string name="fifth_day_weath_type">Cloudy</string>
+    <string name="sixth_day_weath_type">Cloudy</string>
+    <string name="tomorrow_day_night">16 с | 12 с</string>
+    <string name="third_day_day_night">16 с | 12 с</string>
+    <string name="fourth_day_day_night">16 с | 12 с</string>
+    <string name="fifth_day_day_night">16 с | 12 с</string>
+    <string name="sixth_day_day_night">16 с | 12 с</string>
+    <string name="future_day_night">  Day  | Night</string>
+</resources>
