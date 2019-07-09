@@ -3,9 +3,9 @@
     <string name="app_name">WeatherApp</string>
     <string name="city">Kaliningrad</string>
     <string name="date">7th july</string>
-    <string name="day_night">16 c at day| 12 c at night</string>
-    <string name="cur_temp">16 c</string>
-    <string name="feel_temp">feels like 18 с</string>
+    <string name="day_night">16°c at day| 12°c at night</string>
+    <string name="cur_temp">16°c</string>
+    <string name="feel_temp">feels like 18°с</string>
     <string name="weather_type">Cloudy</string>
     <string name="tomorrow">tomorrow</string>
     <string name="third_day">9th july</string>
@@ -17,10 +17,32 @@
     <string name="fourth_day_weath_type">Sunny</string>
     <string name="fifth_day_weath_type">Cloudy</string>
     <string name="sixth_day_weath_type">Cloudy</string>
-    <string name="tomorrow_day_night">16 с | 12 с</string>
-    <string name="third_day_day_night">16 с | 12 с</string>
-    <string name="fourth_day_day_night">16 с | 12 с</string>
-    <string name="fifth_day_day_night">16 с | 12 с</string>
-    <string name="sixth_day_day_night">16 с | 12 с</string>
+    <string name="tomorrow_day_night">16°с | 12°c</string>
+    <string name="third_day_day_night">16°с | 12°c</string>
+    <string name="fourth_day_day_night">16°с | 12°c</string>
+    <string name="fifth_day_day_night">16°с | 12°c</string>
+    <string name="sixth_day_day_night">16°с | 12°c</string>
     <string name="future_day_night">  Day  | Night</string>
+    <string name="choose_city">Choose a city:</string>
+    <string name="wind_speed">Show wind speed</string>
+    <string name="pressure">Show atmosphere pressure</string>
+    <string name="accept">Accept</string>
+    <string name="settings">Settings</string>
+    <string name="dark_theme">Dark theme</string>
+    <string name="temperature">Temperature unit:</string>
+    <string name="C">°C</string>
+    <string name="F">°F</string>
+    <string name="wind_speed_count">Wind speed units:</string>
+    <string name="wind_speed_count_1">m/s</string>
+    <string name="wind_speed_count_2">km/h</string>
+
+    <string-array name="cities">
+        <item>Kaliningrad</item>
+        <item>Moscow</item>
+        <item>Saint-Petersburg</item>
+        <item>Novosibirsk</item>
+        <item>Krasnoyarsk</item>
+        <item>Twer</item>
+    </string-array>
+
 </resources>
