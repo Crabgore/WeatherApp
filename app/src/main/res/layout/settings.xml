@@ -52,6 +52,7 @@
         android:orientation="horizontal">
 
         <RadioButton
+            android:id="@+id/C"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -59,6 +60,7 @@
             android:textSize="15sp"/>
 
         <RadioButton
+            android:id="@+id/F"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -89,6 +91,7 @@
         android:orientation="horizontal">
 
         <RadioButton
+            android:id="@+id/ms"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -96,6 +99,7 @@
             android:textSize="15sp"/>
 
         <RadioButton
+            android:id="@+id/kmh"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"

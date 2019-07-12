@@ -8,6 +8,7 @@
     android:background="@drawable/background">
 
     <TextView
+        android:id="@+id/city"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/city"
@@ -20,6 +21,7 @@
         android:shadowDy="2"/>
 
     <TextView
+        android:id="@+id/date"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/date"
@@ -31,6 +33,7 @@
         android:shadowDy="2"/>
 
     <TextView
+        android:id="@+id/willBe"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/day_night"
@@ -54,6 +57,7 @@
             android:layout_weight="1">
 
             <TextView
+                android:id="@+id/temperature"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:text="@string/cur_temp"
