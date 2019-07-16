@@ -34,6 +34,9 @@
     <string name="wind_speed_count">Единицы измерения скорости ветра:</string>
     <string name="wind_speed_count_1">м/с</string>
     <string name="wind_speed_count_2">км/ч</string>
+    <string name="city_choose_btn">выбрать город</string>
+    <string name="settings_btn">настройки</string>
+    <string name="settings_accept">применить</string>
 
     <string-array name="cities">
         <item>Калининград</item>
