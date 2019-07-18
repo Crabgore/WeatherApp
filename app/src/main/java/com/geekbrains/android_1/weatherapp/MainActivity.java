@@ -13,14 +13,14 @@ public class MainActivity extends AppCompatActivity {
     private static final int REQUEST_CODE_CITY_CHOOSER = 1;
     private static final int REQUEST_CODE_SETTINGS = 2;
 
-    TextView city;
-    TextView windSpeed;
-    TextView windSpeedValue;
-    TextView windSpeedUnits;
-    TextView pressure;
-    TextView pressureValue;
-    TextView pressureUnits;
-    TextView temperature;
+    private TextView city;
+    private TextView windSpeed;
+    private TextView windSpeedValue;
+    private TextView windSpeedUnits;
+    private TextView pressure;
+    private TextView pressureValue;
+    private TextView pressureUnits;
+    private TextView temperature;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
