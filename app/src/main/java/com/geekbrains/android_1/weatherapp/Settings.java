@@ -9,8 +9,8 @@ import android.widget.RadioGroup;
 
 public class Settings extends AppCompatActivity {
 
-    RadioGroup tempVal;
-    RadioGroup spdUnt;
+    private RadioGroup tempVal;
+    private RadioGroup spdUnt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
