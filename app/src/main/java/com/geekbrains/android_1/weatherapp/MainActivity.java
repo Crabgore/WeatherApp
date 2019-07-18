@@ -1,6 +1,7 @@
 package com.geekbrains.android_1.weatherapp;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -42,6 +43,13 @@ public class MainActivity extends AppCompatActivity {
     public void settings(View view) {
         Intent intent = new Intent(MainActivity.this, Settings.class);
         startActivityForResult(intent, 2);
+    }
+
+    public void infoBtn(View view) {
+        String url = "https://ru.wikipedia.org/wiki/" + city.getText().toString();
+        Uri uri = Uri.parse(url);
+        Intent browser = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(browser);
     }
 
     @Override

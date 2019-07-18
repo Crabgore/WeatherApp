@@ -37,6 +37,7 @@
     <string name="city_choose_btn">выбрать город</string>
     <string name="settings_btn">настройки</string>
     <string name="settings_accept">применить</string>
+    <string name="info">О городе</string>
 
     <string-array name="cities">
         <item>Калининград</item>
