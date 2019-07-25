@@ -51,4 +51,12 @@
         <item>Архангельск</item>
     </string-array>
 
+    <string-array name="days">
+        <item>Завтра</item>
+        <item>через день</item>
+        <item>через два дня</item>
+        <item>через три дня</item>
+        <item>через четыре дня</item>
+    </string-array>
+
 </resources>

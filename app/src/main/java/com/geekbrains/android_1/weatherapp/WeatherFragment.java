@@ -6,6 +6,9 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.DividerItemDecoration;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -44,7 +47,11 @@ public class WeatherFragment extends Fragment {
         Button info;
         Button settings;
 
+        String[] data = getResources().getStringArray(R.array.days);
+
         View layout = inflater.inflate(R.layout.fragment_weather, container, false);
+
+        initRecyclerView(data, layout);
 
         final TextView tv = layout.findViewById(R.id.city);
         temperature = layout.findViewById(R.id.temperature);
@@ -86,5 +93,20 @@ public class WeatherFragment extends Fragment {
                 } else windSpeedUnits.setText("км/ч");
             }
         }
+    }
+
+    private void initRecyclerView(String[] data, View layout){
+        RecyclerView recyclerView = layout.findViewById(R.id.recycler_view);
+        recyclerView.setHasFixedSize(true);
+
+        LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
+        recyclerView.setLayoutManager(layoutManager);
+
+        WeatherAdapter weatherAdapter = new WeatherAdapter(data);
+        recyclerView.setAdapter(weatherAdapter);
+
+        DividerItemDecoration itemDecoration = new DividerItemDecoration(layout.getContext(), LinearLayoutManager.VERTICAL);
+        itemDecoration.setDrawable(getResources().getDrawable(R.drawable.separator));
+        recyclerView.addItemDecoration(itemDecoration);
     }
 }
