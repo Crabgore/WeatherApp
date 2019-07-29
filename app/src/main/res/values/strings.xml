@@ -34,6 +34,10 @@
     <string name="wind_speed_count">Единицы измерения скорости ветра:</string>
     <string name="wind_speed_count_1">м/с</string>
     <string name="wind_speed_count_2">км/ч</string>
+    <string name="city_choose">Выберите город</string>
+    <string name="settings_btn">настройки</string>
+    <string name="settings_accept">применить</string>
+    <string name="info">О городе</string>
 
     <string-array name="cities">
         <item>Калининград</item>
@@ -42,6 +46,17 @@
         <item>Новосибирск</item>
         <item>Красноярск</item>
         <item>Тверь</item>
+        <item>Омск</item>
+        <item>Краснодар</item>
+        <item>Архангельск</item>
+    </string-array>
+
+    <string-array name="days">
+        <item>Завтра</item>
+        <item>через день</item>
+        <item>через два дня</item>
+        <item>через три дня</item>
+        <item>через четыре дня</item>
     </string-array>
 
 </resources>

@@ -35,6 +35,10 @@
     <string name="wind_speed_count">Wind speed units:</string>
     <string name="wind_speed_count_1">m/s</string>
     <string name="wind_speed_count_2">km/h</string>
+    <string name="city_choose">Choose city</string>
+    <string name="settings_btn">settings</string>
+    <string name="settings_accept">accept</string>
+    <string name="info">city info</string>
 
     <string-array name="cities">
         <item>Kaliningrad</item>
@@ -43,6 +47,17 @@
         <item>Novosibirsk</item>
         <item>Krasnoyarsk</item>
         <item>Twer</item>
+        <item>Omsk</item>
+        <item>Krasnodar</item>
+        <item>Archangelsk</item>
+    </string-array>
+
+    <string-array name="days">
+        <item>Tomorow</item>
+        <item>day after tomorrow</item>
+        <item>after two days</item>
+        <item>after three days</item>
+        <item>after four days</item>
     </string-array>
 
 </resources>
