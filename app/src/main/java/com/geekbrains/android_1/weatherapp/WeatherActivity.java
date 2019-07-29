@@ -1,10 +1,10 @@
 package com.geekbrains.android_1.weatherapp;
 
 import android.content.res.Configuration;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class WeatherActivity extends AppCompatActivity {
+public class WeatherActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

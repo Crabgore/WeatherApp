@@ -196,6 +196,7 @@
                 android:shadowDx="2"
                 android:shadowDy="2"/>
 
+
         </LinearLayout>
 
         <TextView
@@ -212,12 +213,12 @@
             android:shadowDx="2"
             android:shadowDy="2"/>
 
-        <android.support.v7.widget.RecyclerView
+        <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-        </android.support.v7.widget.RecyclerView>
+        </androidx.recyclerview.widget.RecyclerView>
 
 
         <LinearLayout
@@ -225,23 +226,25 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/settings"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/settings_btn"
                 android:textSize="10sp"
-                android:onClick="settings"/>
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"/>
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/info"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/info"
                 android:textSize="10sp"
-                android:onClick="infoBtn"/>
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"/>
 
         </LinearLayout>
     </LinearLayout>

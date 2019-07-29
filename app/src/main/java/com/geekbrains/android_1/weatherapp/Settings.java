@@ -1,13 +1,16 @@
 package com.geekbrains.android_1.weatherapp;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SwitchCompat;
+
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CompoundButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
-public class Settings extends AppCompatActivity {
+public class Settings extends BaseActivity {
 
     private RadioGroup tempVal;
     private RadioGroup spdUnt;
@@ -19,6 +22,15 @@ public class Settings extends AppCompatActivity {
 
         tempVal = findViewById(R.id.temp);
         spdUnt = findViewById(R.id.wind);
+        SwitchCompat switchTheme = findViewById(R.id.dark_theme_enabler);
+        switchTheme.setChecked(isDarkTheme());
+        switchTheme.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                setDarkTheme(isChecked);
+                recreate();
+            }
+        });
     }
 
     public void settings_accept(View view) {

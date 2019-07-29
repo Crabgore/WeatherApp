@@ -4,10 +4,10 @@ package com.geekbrains.android_1.weatherapp;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,6 +21,7 @@ import android.widget.TextView;
  */
 public class CityChooserFragment extends Fragment {
 
+    private static final int REQUEST_CODE_WEATHER_ACTIVITY = 42;
     private boolean isLand;
     private String currentPosition;
     private ListView lv;
@@ -63,7 +64,7 @@ public class CityChooserFragment extends Fragment {
                     Intent intent = new Intent();
                     intent.setClass(getActivity(), WeatherActivity.class);
                     intent.putExtra("CITY", lv.getItemAtPosition(position).toString());
-                    startActivity(intent);
+                    startActivityForResult(intent, REQUEST_CODE_WEATHER_ACTIVITY);
                 }
             }
         };
@@ -71,6 +72,12 @@ public class CityChooserFragment extends Fragment {
         lv = (ListView)getActivity().findViewById(R.id.list_item);
         tv = (TextView)getActivity().findViewById(R.id.city);
         lv.setOnItemClickListener(itemClickListener);
+    }
 
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == REQUEST_CODE_WEATHER_ACTIVITY){
+            getActivity().recreate();
+        }
     }
 }
